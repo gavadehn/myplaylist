@@ -1,0 +1,16 @@
+// 1. Nạp thư viện (Giữ nguyên không sửa file này)
+@import '../../assets-multiverse/sass/main'; 
+@import '../../assets-plyr/sass/plyr'; 
+
+// 2. Nạp các tùy chỉnh của riêng bạn
+.plyr { 
+    border-radius: 4px; 
+    margin-bottom: 20px; 
+}
+.media-container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    /* Giữ tỷ lệ khung hình video */
+    aspect-ratio: 16 / 9; 
+    width: 100%;
+}

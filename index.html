@@ -2,34 +2,59 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Gavade playlist</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/assets-app/css/app.css" />
 </head>
 <body>
-  <header>
-    <h1>Xin chào, tôi là [Tên của bạn]</h1>
-    <p>Nhà phát triển tiện ích phần mềm | Yêu code | Chia sẻ & đóng góp</p>
-  </header>
+  <div id="wrapper">
+    <header>
+      <h1> GAVADE PLAYLIST </h1>
+      <p> Mỗi ngày một playlist cho riêng bạn</p>
+    </header>
 
-  <section id="projects">
-    <h2>Dự án của tôi</h2>
-    <ul>
-      <li><a href="https://example.com/san-pham-1" target="_blank">🔧 Tiện ích A – mô tả ngắn gọn</a></li>
-      <li><a href="https://example.com/san-pham-2" target="_blank">🧩 Plugin B – mô tả nhanh</a></li>
-    </ul>
-  </section>
+    <!-- <section id="projects">
+      <h2>Dự án của tôi</h2>
+      <ul>
+        <li><a href="https://example.com/san-pham-1" target="_blank">🔧 Tiện ích A – mô tả ngắn gọn</a></li>
+        <li><a href="https://example.com/san-pham-2" target="_blank">🧩 Plugin B – mô tả nhanh</a></li>
+      </ul>
+    </section> -->
 
-  <section id="donate">
-    <h2>Ủng hộ tôi ☕</h2>
-    <p>Nếu bạn thấy công việc của tôi hữu ích, hãy ủng hộ một ly cà phê:</p>
-    <a href="https://www.buymeacoffee.com/tennguoidung" target="_blank">
-      <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me a Coffee" style="height: 60px;">
-    </a>
-  </section>
+    <div id="main">
+      <article>
+        <a class="thumbnail" href="#youtube-video-1">
+            <img src="https://img.youtube.com/vi/IzIwYhSJmWY/maxresdefault.jpg" alt="Tiêu đề video" />
+        </a>
+        <h2>まめまき</h2>
+        
+        <div id="youtube-video-1" style="display:none;">
+            <div class="media-container">
+                <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="IzIwYhSJmWY"></div>
+            </div>
+            <p>節分の歌・冬の童謡</p>
+        </div>
+      </article>
+    </div>
 
-  <footer>
-    <p>© 2025 Tên của bạn – Mọi quyền được bảo lưu.</p>
-  </footer>
+    <section id="donate">
+      <h2>Ủng hộ tôi ☕</h2>
+      <p>Nếu bạn thấy công việc của tôi hữu ích, hãy ủng hộ một ly cà phê:</p>
+      <a href="https://www.buymeacoffee.com/tennguoidung" target="_blank">
+        <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me a Coffee" style="height: 60px;">
+      </a>
+    </section>
+
+    <footer>
+      <p>© 2025 Tên của bạn – Mọi quyền được bảo lưu.</p>
+    </footer>
+  </div>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
