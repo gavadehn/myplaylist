@@ -5,6 +5,14 @@
     'use strict';
 
     $(function() {
+        // Dùng window.Plyr để đảm bảo lấy đúng biến từ thẻ script đã nhúng
+        const PlyrLib = window.Plyr; 
+
+        if (!PlyrLib) {
+            console.error("Không tìm thấy thư viện Plyr! Hãy kiểm tra lại thẻ script trong HTML.");
+            return;
+        }
+        
         // 1. Khởi tạo Plyr cho toàn bộ class .player
         // Chúng ta dùng mảng để dễ dàng điều khiển từng player sau này
         const players = Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p));
