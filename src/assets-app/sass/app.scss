@@ -8,9 +8,15 @@
     margin-bottom: 20px; 
 }
 .media-container { 
-    max-width: 800px; 
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 800px; /* Hoặc kích thước bạn muốn */
+    margin: 0 auto;
     /* Giữ tỷ lệ khung hình video */
     aspect-ratio: 16 / 9; 
     width: 100%;
+}
+
+/* Đảm bảo Plyr controls luôn nổi lên trên */
+.plyr--full-ui {
+    z-index: 10;
 }
